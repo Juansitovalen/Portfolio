@@ -1,0 +1,32 @@
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 980px) {
+    .hero { grid-template-columns: 1fr; padding-top: 120px; }
+    .about { grid-template-columns: 1fr; }
+    .editor { order: -1; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+  }
+ 
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  @media (max-width: 880px) {
+  .about { grid-template-columns: 1fr; }
+  .skills-panel { padding: 28px 20px; }
+}
+
+@media (max-width: 880px) {
+  .carousel-track::before,
+  .carousel-track::after { flex: 0 0 20px; }
+  .project-card { flex: 0 0 90vw; }
+  .card-inner { grid-template-columns: 1fr; }
+  .card-visual { border-right: none; border-bottom: 1px solid var(--line); }
+  .carousel-arrow { display: none; }
+}
+ 
+@media (max-width: 880px) {
+  .services-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+}
+
+@media (max-width: 600px) {
+  .player { bottom: 16px; right: 16px; left: 16px; min-width: unset; }
+}
